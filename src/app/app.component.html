@@ -1,0 +1,28 @@
+<!--kendo-treelist 
+[kendoTreeListFlatBinding]="data" 
+[resizable] = "true"
+[sortable]="true"
+[reorderable]="true"
+[selectable]="true"
+[height]="410" 
+kendoTreeListExpandable
+idField="id" 
+parentIdField="managerId">
+
+<kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
+</kendo-treelist-column>
+
+<kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
+
+<kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
+
+</kendo-treelist-->
+
+<h2 class="header-node-text">Cart value for browser is - {{cart.browser}}</h2>
+<h2 class="header-node-text">Cart value for entitlementObj.ekey_test_param is - {{cart.entitlementsObj.test_param}}</h2>
+Change cart.entitlementsObj.test_param_next value here:<input #box (keyup)="cart.entitlementsObj.test_param_next = box.value">
+<p>cart.entitlementsObj.test_param_next value : {{cart.entitlementsObj.test_param_next}}</p>
+
+<br>
+
+<app-testcomponent></app-testcomponent>
